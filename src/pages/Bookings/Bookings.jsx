@@ -11,7 +11,7 @@ const Bookings = () => {
 
     // const url = `https://car-doctor-server-v2-nine.vercel.app/checkouts?email=${user?.email}`
     const url = `/checkouts?email=${user?.email}`
-
+console.log(user?.email);
     useEffect(() => {
         // setLoading(true)
         axiosSecure.get(url).then((res) => {
